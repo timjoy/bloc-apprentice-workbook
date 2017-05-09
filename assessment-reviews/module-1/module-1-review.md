@@ -12,13 +12,13 @@
 
 1. What is HTML and what is it used for? Answer: HTML (Hyper Text Markup Language) is a computer language used in building websites.  In HTML, "tags" are used to organize text and images into different headers and categories. 
 2. What is the difference between an ID and a class? A: In CSS, the computer language used to add style and form to the HTML structure, an ID is generally used to differentiate/manipulate ONE element of the HTML, whereas, a class is generally used to differentiate/manipulate a whole segment/category of HTML. 
-3. What does it mean to write "semantic" HTML? A: 
+3. What does it mean to write "semantic" HTML? A: Writing semantic HTML is use use HTML in ways that augment its meaning, as opposed to merely adding to its style and presentation.  This can be done by, fornexample, organizing a group of text under a certain header, or using the <em> emphasis tag on a word or phrase.</em>
 
 ### Exercises
 
-1. Write a paragraph tag with a class of "highlight" and content "Watch out!".
-2. Write an HTML image tag to show an image called `profile-picture.jpg`.
-3. Write a link tag that links to http://google.com.
+1. Write a paragraph tag with a class of "highlight" and content "Watch out!". <p><mark>"Watch out!"</mark></p>
+2. Write an HTML image tag to show an image called `profile-picture.jpg`. <img src = 'profile-picture.jpg'>
+3. Write a link tag that links to http://google.com. <a href = "http://google.com">Link to google here.</a>
 5. Write an complete standard HTML document outline (including a DOCTYPE, and `<html>`, `<head>`, and `<body>` tags).
 6. Inside of the code for the previous exercise, write the appropriate tag to link to a script file called `main.js`.
 7. Inside of the code for the previous exercise, write the appropriate tag to link to a stylesheet file called `main.css`.
