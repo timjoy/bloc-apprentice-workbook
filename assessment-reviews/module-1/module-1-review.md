@@ -20,9 +20,29 @@
 2. Write an HTML image tag to show an image called `profile-picture.jpg`. <img src = 'profile-picture.jpg'>
 3. Write a link tag that links to http://google.com. <a href = "http://google.com">Link to google here.</a>
 5. Write an complete standard HTML document outline (including a DOCTYPE, and `<html>`, `<head>`, and `<body>` tags).
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type='text/css' rel='stylesheet' href='main.css'>
+    <script type='text/javascript' src='main.js'></script>
+  </head>
+  <body>
+  <h1> ... </h1>
+  <h2> ... </h2>
+  <h3> ... </h3>
+    <ul>
+      <li> ... </li>
+      <li> ... </li>
+    </ul>
+  </body>  
 6. Inside of the code for the previous exercise, write the appropriate tag to link to a script file called `main.js`.
 7. Inside of the code for the previous exercise, write the appropriate tag to link to a stylesheet file called `main.css`.
 8. Write a numbered list in HTML and list three of your favorite books.
+<ol>
+  <li><i> Ragtime </i></li>
+  <li><i> Goodnight Me, Goodnight You </i></li>
+  <li><i> Where the Wild Things Are </i></li>
+</ol>  
 9. Fix the indentation of the following HTML sample:
 
   ```html
