@@ -86,15 +86,15 @@
 
 ### Questions
 
-1. What is a function? What are they used for?
-2. What is the difference between `==` and `===`?
-3. What is the difference between global and local scope variables?
-4. What is a boolean value?
-5. What is an array?
+1. What is a function? What are they used for? A: A function is a particular type of code that executes whatever action is specified in the body of the code.  Functions are used for iterating a simple or complex task multiple times; functions eliminate errors and reduce the energy and time used by people and computers.
+2. What is the difference between `==` and `===`? A: Both symbols mean "are the same thing as". '===' differs from '==' in JavaScript code in that '===' acts as an assimilator between strings and numbers, allowing more efficient interpretation of code. For example: the string "23"===23 the number.
+3. What is the difference between global and local scope variables? A: With regard to functions, variables of global scope retain their value both outside and inside the function.  They are established in the first lines of code, before the function is written and indentations are made.  Local variables are contained within a particular function and their value pertains only to the particular function in which they are contained.
+4. What is a boolean value? True and False are the common boolean values.  Along with other types of values, they are implicitly used in "if", "else/if", and "while" functions to direct the flow of the function.  
+5. What is an array? An array is a group of values - usually strings and/or numbers. for example: var array = [1, red, 2, blue]
 
 ### Exercises
 
-1. Write a line that declares a variable called `myName` and set its value to your name.
+1. Write a line that declares a variable called `myName` and set its value to your name. 
 2. Write a loop that logs the numbers 1 through 10 to the console.
 3. Translate the following pseudocode into JavaScript: if `score` is greater than `3` and `lives` is greater than `0`, alert "You win!".
 4. Write a function `sayHello` that takes one argument, a name, and logs "Hello, <name>!" to the console. Then, call the function below the function definition and pass in your name as the argument.
