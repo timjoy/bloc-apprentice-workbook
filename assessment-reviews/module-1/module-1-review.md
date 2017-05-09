@@ -125,9 +125,9 @@ sayHello(Tim);
 
   setSong("Friday, Friday");
 
-  console.log(currentSong);
+   console.log(currentSong);
   ```
-
+A: This would log "Friday, Friday" to the console.  
 6. What would the following script log to the console?
 
   ```javascript
@@ -139,7 +139,7 @@ sayHello(Tim);
 
   console.log(result);
   ```
-
+A: add(3, 7)
 7. What would the following script log to the console?
 
   ```javascript
@@ -159,7 +159,25 @@ sayHello(Tim);
   ```
 
 8. Write a function `findLongestWord()` that takes an array of words and returns the length of the longest one.
+var word = [scooby, shaggy, fred, swampmonster]
+var i = 0
+findLongestWord(word){
+  if (word.length[i] > word.length[i++]){
+    word.pop[i++];}
+    else if (word.length[i] < word.length[i++]){
+      word.pop[i];}
+    elso if (word.length[i] = word.length[i++]){
+      word.pop[i];}
+  else(if word[i++]=undefined){
+    return word[i]}
+}    
+      
+      
+
 9. Define a function `sum()` that sums all the numbers in an array of numbers. For example, `sum([1,2,3,4])` should return 10.
+var numbers = [1,2,3,4]
+function sum(number
+
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 11. Write the correct line to make `"Woof!"` show up in the console based on this script:
 
