@@ -33,8 +33,8 @@
     <ul>
       <li> ... </li>
       <li> ... </li>
-    </ul>
-  </body>  
+      </ul>
+  </body>
 6. Inside of the code for the previous exercise, write the appropriate tag to link to a script file called `main.js`.
 7. Inside of the code for the previous exercise, write the appropriate tag to link to a stylesheet file called `main.css`.
 8. Write a numbered list in HTML and list three of your favorite books.
@@ -48,11 +48,11 @@
   ```html
   <div>
   <ul>
-  <li>Item 1</li>
+    <li>Item 1</li>
     <li>Item 2</li>
-  <li>Item 3</li>
-    </ul>
-    </div>
+    <li>Item 3</li>
+  </ul>
+  </div>
   ```
 
 ## CSS
@@ -94,10 +94,26 @@
 
 ### Exercises
 
-1. Write a line that declares a variable called `myName` and set its value to your name. 
+1. Write a line that declares a variable called `myName` and set its value to your name.
+var myName = Tim
 2. Write a loop that logs the numbers 1 through 10 to the console.
+var number = 1
+while(number<11){
+  console.log(number);
+  number++;
+}  
 3. Translate the following pseudocode into JavaScript: if `score` is greater than `3` and `lives` is greater than `0`, alert "You win!".
+if(var score>3){
+  if(var lives>0){
+  alert("You win!");
+  }
+}
 4. Write a function `sayHello` that takes one argument, a name, and logs "Hello, <name>!" to the console. Then, call the function below the function definition and pass in your name as the argument.
+function sayHello(name){
+  return console.log("Hello, " + name + "!");
+}
+sayHello(Tim);
+
 5. What would the following script log to the console?
 
   ```javascript
