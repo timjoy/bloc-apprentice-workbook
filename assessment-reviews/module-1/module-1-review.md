@@ -10,9 +10,9 @@
 
 ### Questions
 
-1. What is HTML and what is it used for?
-2. What is the difference between an ID and a class?
-3. What does it mean to write "semantic" HTML?
+1. What is HTML and what is it used for? Answer: HTML (Hyper Text Markup Language) is a computer language used in building websites.  In HTML, "tags" are used to organize text and images into different headers and categories. 
+2. What is the difference between an ID and a class? A: In CSS, the computer language used to add style and form to the HTML structure, an ID is generally used to differentiate/manipulate ONE element of the HTML, whereas, a class is generally used to differentiate/manipulate a whole segment/category of HTML. 
+3. What does it mean to write "semantic" HTML? A: 
 
 ### Exercises
 
