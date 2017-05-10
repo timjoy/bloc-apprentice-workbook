@@ -66,18 +66,24 @@
 
 1. What is CSS and what is it used for? A: CSS is a group of code used to add characteristics to a block of HTML content.  CSS changes the shape, colors, and style of the text and other content on a webpage.
 2. What is the CSS box model? A: The box model is a way to describe and manipulate the area around a block of HTML content.  The content is at the center of the box.  Moving outward from the content, there are the padding, border, and margin areas, whose withs can be adjusted using CSS.  
-3. What's the difference between margin and padding? Padding is the area directly neighboring the content.  The border separates the padding and the outer ring of pixels, known as the margin.
+3. What's the difference between margin and padding? A: Padding is the area directly neighboring the content.  The border separates the padding and the outer ring of pixels, known as the margin.
 
 ### Exercises
 
-1. Write a CSS rule to make the text of all `h1` tags red. 
+1. Write a CSS rule to make the text of all `h1` tags red.
+```
+h1{color:red;}
+```
+
 
 2. Write a CSS rule to make the background color of the link with `class="btn"` blue:
 
   ```html
   <a href="#" class="btn">Learn more</a>
   ```
-
+  ```css
+  .btn a{background-color: blue;}
+```
 3. Write a CSS rule to give the first paragraph in the following HTML a font size of `20px`, but not the second paragraph.
 
   ```html
@@ -87,7 +93,9 @@
 
   <p>Welcome to this awesome website!</p>
   ```
-
+``` css
+header p{font size: 20px;}
+```
 ## JavaScript
 
 ### Questions
@@ -191,7 +199,8 @@ var numbers = [1,2,3,4]
      x = 0
      for (var i = 0; i < numbers.length; i++){
        x =  x + numbers[i];
-       return x}}
+       if(i = numbers.length){
+       return x;}}
 ```   
 
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
@@ -224,33 +233,51 @@ function trueVowel(array){
     }
   };
   ```
-
+ What is going on with the semi-colons?  This block of code is a strange animal.  Does this have to do with a prototype override?
 12. Using the same script as above, write the correct line to log the dog's name to the console.
 
 ## Command Line
 
 ### Questions
 
-1. What is the command line and what is it used for?
-2. What does the command `ls` do?
-3. What does the command `pwd` do?
-4. What does the following command do: `cd my-cool-project`
+1. What is the command line and what is it used for? A: The command line is a communication system between the computer user and the computer.  It allows the user to navigate the various files stored by the computer.
+2. What does the command `ls` do? A: It prints the contents (file and folder namnes) of the current directory.
+3. What does the command `pwd` do? A: It prints the working directory.
+4. What does the following command do: `cd my-cool-project` A: It changes the directory to the my-cool-project directory.
 
 ### Exercises
 
 1. Write the command to make a new directory called "my-cool-project".
+```
+mkdir media my-cool-project
+```
 2. Write the command to create a file called "index.html".
+```
+touch index.html
+```
 3. Write the command to delete a file called "main.css".
+```
+rm main.css
+```
 
 ## Git
 
 ### Questions
 
-1. What is Git and what is it used for?
-2. What's the difference between a local repository and a remote repository?
+1. What is Git and what is it used for? A: Well, they said it about 78 times in the codeschool videos.  Git is used by developers to collaborate on projects.  The original code is retained while multiple people are allowed to access it, make changes to it, and track diffent versions of it(the original).  
+2. What's the difference between a local repository and a remote repository? A: The local repo is where you access a file and make changes to it.  The remote repo is where you "push" a file to so that others can view it and make changes to it.
 
 ### Exercises
 
 1. Write the command that you would use to create a new local Git repository.
+```
+git init
+```
 2. Write the command to stage a file called `index.html` to be committed.
+```
+git add index.html
+```
 3. Write the command to view the current status of the git repository.
+```
+git status
+```
