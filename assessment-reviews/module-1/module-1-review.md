@@ -17,10 +17,10 @@
 ### Exercises
 
 1. Write a paragraph tag with a class of "highlight" and content "Watch out!". <p><mark>"Watch out!"</mark></p>
-2. Write an HTML image tag to show an image called `profile-picture.jpg`. <img src = 'profile-picture.jpg'>
+2. Write an HTML image tag to show an image called `profile-picture.jpg`. <img src = "profile-picture.jpg">
 3. Write a link tag that links to http://google.com. <a href = "http://google.com">Link to google here.</a>
 5. Write an complete standard HTML document outline (including a DOCTYPE, and `<html>`, `<head>`, and `<body>` tags).
-<!DOCTYPE html>
+~<!DOCTYPE html>
 <html>
   <head>
     <link type='text/css' rel='stylesheet' href='main.css'>
@@ -34,7 +34,7 @@
       <li> ... </li>
       <li> ... </li>
       </ul>
-  </body>
+  </body>~
 6. Inside of the code for the previous exercise, write the appropriate tag to link to a script file called `main.js`.
 7. Inside of the code for the previous exercise, write the appropriate tag to link to a stylesheet file called `main.css`.
 8. Write a numbered list in HTML and list three of your favorite books.
@@ -109,10 +109,10 @@ if(var score>3){
   }
 }
 4. Write a function `sayHello` that takes one argument, a name, and logs "Hello, <name>!" to the console. Then, call the function below the function definition and pass in your name as the argument.
-function sayHello(name){
-  return console.log("Hello, " + name + "!");
-}
-sayHello(Tim);
+~function sayHello(name){
+ ~ return console.log("Hello, " + name + "!");
+~}
+~sayHello(Tim);
 
 5. What would the following script log to the console?
 
@@ -159,24 +159,29 @@ A: add(3, 7)
   ```
 
 8. Write a function `findLongestWord()` that takes an array of words and returns the length of the longest one.
-var word = [scooby, shaggy, fred, swampmonster]
-var i = 0
-findLongestWord(word){
-  if (word.length[i] > word.length[i++]){
-    word.pop[i++];}
-    else if (word.length[i] < word.length[i++]){
-      word.pop[i];}
-    elso if (word.length[i] = word.length[i++]){
-      word.pop[i];}
-  else(if word[i++]=undefined){
-    return word[i]}
-}    
+~var word = [scooby, shaggy, fred, swampmonster]
+~var i = 0
+~findLongestWord(word){
+~  if (word[i].length > word[i++].length){
+~    word.pop[i++];}
+~    else if (word[i].length < word[i++].length){
+~      word.pop[i];}
+~    elso if (word[i].length = word[i++].length){
+~      word.pop[i];}
+~  else(if word[i++]=undefined){
+~    return word[i]}
+~}    
       
       
 
 9. Define a function `sum()` that sums all the numbers in an array of numbers. For example, `sum([1,2,3,4])` should return 10.
-var numbers = [1,2,3,4]
-function sum(number
+~var numbers = [1,2,3,4] 
+~   function sum(numbers){
+~     x = 0
+~     for (var i = 0; i < numbers.length; i++){
+~       x =  x + numbers[i];
+~       return x}}
+   
 
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 11. Write the correct line to make `"Woof!"` show up in the console based on this script:
@@ -186,7 +191,7 @@ function sum(number
     name: "Charles",
     goodDog: true,
     speak: function() {
-      console.log("Woof!");
+      console.log("Woof!"); 
     }
   };
   ```
