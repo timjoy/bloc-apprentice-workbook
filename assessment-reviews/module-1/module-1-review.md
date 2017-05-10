@@ -20,7 +20,8 @@
 2. Write an HTML image tag to show an image called `profile-picture.jpg`. <img src = "profile-picture.jpg">
 3. Write a link tag that links to http://google.com. <a href = "http://google.com">Link to google here.</a>
 5. Write an complete standard HTML document outline (including a DOCTYPE, and `<html>`, `<head>`, and `<body>` tags).
-~<!DOCTYPE html>
+```
+<!DOCTYPE html>
 <html>
   <head>
     <link type='text/css' rel='stylesheet' href='main.css'>
@@ -34,15 +35,19 @@
       <li> ... </li>
       <li> ... </li>
       </ul>
-  </body>~
+  </body>
+```  
+  
 6. Inside of the code for the previous exercise, write the appropriate tag to link to a script file called `main.js`.
 7. Inside of the code for the previous exercise, write the appropriate tag to link to a stylesheet file called `main.css`.
 8. Write a numbered list in HTML and list three of your favorite books.
+```
 <ol>
   <li><i> Ragtime </i></li>
   <li><i> Goodnight Me, Goodnight You </i></li>
   <li><i> Where the Wild Things Are </i></li>
-</ol>  
+</ol>
+```
 9. Fix the indentation of the following HTML sample:
 
   ```html
@@ -59,13 +64,14 @@
 
 ### Questions
 
-1. What is CSS and what is it used for?
-2. What is the CSS box model?
-3. What's the difference between margin and padding?
+1. What is CSS and what is it used for? A: CSS is a group of code used to add characteristics to a block of HTML content.  CSS changes the shape, colors, and style of the text and other content on a webpage.
+2. What is the CSS box model? A: The box model is a way to describe and manipulate the area around a block of HTML content.  The content is at the center of the box.  Moving outward from the content, there are the padding, border, and margin areas, whose withs can be adjusted using CSS.  
+3. What's the difference between margin and padding? Padding is the area directly neighboring the content.  The border separates the padding and the outer ring of pixels, known as the margin.
 
 ### Exercises
 
-1. Write a CSS rule to make the text of all `h1` tags red.
+1. Write a CSS rule to make the text of all `h1` tags red. 
+
 2. Write a CSS rule to make the background color of the link with `class="btn"` blue:
 
   ```html
@@ -97,11 +103,13 @@
 1. Write a line that declares a variable called `myName` and set its value to your name.
 var myName = Tim
 2. Write a loop that logs the numbers 1 through 10 to the console.
+```
 var number = 1
 while(number<11){
   console.log(number);
   number++;
 }  
+```
 3. Translate the following pseudocode into JavaScript: if `score` is greater than `3` and `lives` is greater than `0`, alert "You win!".
 if(var score>3){
   if(var lives>0){
@@ -109,11 +117,12 @@ if(var score>3){
   }
 }
 4. Write a function `sayHello` that takes one argument, a name, and logs "Hello, <name>!" to the console. Then, call the function below the function definition and pass in your name as the argument.
-~function sayHello(name){
- ~ return console.log("Hello, " + name + "!");
-~}
-~sayHello(Tim);
-
+```
+function sayHello(name){
+  return console.log("Hello, " + name + "!");
+}
+sayHello(Tim);
+```
 5. What would the following script log to the console?
 
   ```javascript
@@ -159,31 +168,51 @@ A: add(3, 7)
   ```
 
 8. Write a function `findLongestWord()` that takes an array of words and returns the length of the longest one.
-~var word = [scooby, shaggy, fred, swampmonster]
-~var i = 0
-~findLongestWord(word){
-~  if (word[i].length > word[i++].length){
-~    word.pop[i++];}
-~    else if (word[i].length < word[i++].length){
-~      word.pop[i];}
-~    elso if (word[i].length = word[i++].length){
-~      word.pop[i];}
-~  else(if word[i++]=undefined){
-~    return word[i]}
-~}    
-      
+```
+var word = [scooby, shaggy, fred, swampmonster]
+var i = 0
+findLongestWord(word){
+  if (word[i].length > word[i++].length){
+    word.pop[i++];}
+    else if (word[i].length < word[i++].length){
+      word.pop[i];}
+    else if (word[i].length = word[i++].length){
+      word.pop[i];}
+  else(if word[i++]=undefined){
+    return word[i]}
+}    
+```      
       
 
 9. Define a function `sum()` that sums all the numbers in an array of numbers. For example, `sum([1,2,3,4])` should return 10.
-~var numbers = [1,2,3,4] 
-~   function sum(numbers){
-~     x = 0
-~     for (var i = 0; i < numbers.length; i++){
-~       x =  x + numbers[i];
-~       return x}}
-   
+```
+var numbers = [1,2,3,4] 
+   function sum(numbers){
+     x = 0
+     for (var i = 0; i < numbers.length; i++){
+       x =  x + numbers[i];
+       return x}}
+```   
 
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
+```
+var array = [arrayOne[a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z], arrayTwo[a,e,i,o,u]]
+var i=0  
+var x=0
+function trueVowel(array){
+  if (array[0][i] == array[1][x]){
+    return true;
+    i++;
+    else if (x<4; array[0][i] !== array[1][x];){
+    x++;}
+  else(array[0][i] !== array[1][4]){
+    return false;
+    i++}}
+```    
+    
+    
+    
+  
 11. Write the correct line to make `"Woof!"` show up in the console based on this script:
 
   ```javascript
