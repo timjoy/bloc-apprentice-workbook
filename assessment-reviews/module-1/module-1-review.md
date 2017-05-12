@@ -190,13 +190,13 @@ findLongestWord(a)
 
 9. Define a function `sum()` that sums all the numbers in an array of numbers. For example, `sum([1,2,3,4])` should return 10.
 ```
-var numbers = [1,2,3,4] 
-   function sum(numbers){
-     x = 0
-     for (var i = 0; i < numbers.length; i++){
-       x =  x + numbers[i];
-       if(i = numbers.length){
-       return x;}}
+array=[1,2,3,4];
+x=0;
+function(sum){
+  for(var i=0;i<array.length;i++){
+    x=array[i]+x;}
+  console.log(x);}
+sum(array)  
 ```   
 
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
@@ -211,8 +211,7 @@ function trueVowel(array){
     else if (x<4; array[0][i] !== array[1][x];){
     x++;}
   else(array[0][i] !== array[1][4]){
-    return false;
-    i++}}
+    return false
 ```    
     
     
