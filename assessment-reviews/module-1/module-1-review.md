@@ -201,17 +201,16 @@ sum(array)
 
 10. Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 ```
-var array = [arrayOne[a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z], arrayTwo[a,e,i,o,u]]
-var i=0  
-var x=0
-function trueVowel(array){
-  if (array[0][i] == array[1][x]){
-    return true;
-    i++;
-    else if (x<4; array[0][i] !== array[1][x];){
-    x++;}
-  else(array[0][i] !== array[1][4]){
-    return false
+array=["a","e","i","o","u"];
+function trueVowel(anyLetter){
+  for(i=0;i<4;i++){
+    if(array[i]!=anyLetter){}
+      else{console.log("true");}}
+  for(i=4){
+    if(array[i]!=anyLetter){
+      console.log("false");}
+      else{console.log("true");}}}
+trueVowel("u")  
 ```    
     
     
