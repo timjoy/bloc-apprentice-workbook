@@ -192,7 +192,7 @@ findLongestWord(a)
 ```
 array=[1,2,3,4];
 x=0;
-function(sum){
+function sum(){
   for(var i=0;i<array.length;i++){
     x=array[i]+x;}
   console.log(x);}
@@ -217,7 +217,7 @@ function trueVowel(array){
     
     
   
-11. Write the correct line to make `"Woof!"` show up in the console based on this script:
+ 11. Write the correct line to make `"Woof!"` show up in the console based on this script:
 
   ```javascript
   var pet = {
