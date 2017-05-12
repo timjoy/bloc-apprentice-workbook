@@ -203,10 +203,10 @@ sum(array)
 ```
 array=["a","e","i","o","u"];
 function trueVowel(anyLetter){
-  for(i=0;i<4;i++){
+  for(vari=0;i<4;i++){
     if(array[i]!=anyLetter){}
       else{console.log("true");}}
-  for(i=4){
+  for(vari=4;();()){
     if(array[i]!=anyLetter){
       console.log("false");}
       else{console.log("true");}}}
