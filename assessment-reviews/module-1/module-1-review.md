@@ -16,9 +16,9 @@
 
 ### Exercises
 
-1. Write a paragraph tag with a class of "highlight" and content "Watch out!". <p><mark>"Watch out!"</mark></p>
-2. Write an HTML image tag to show an image called `profile-picture.jpg`. <img src = "profile-picture.jpg">
-3. Write a link tag that links to http://google.com. <a href = "http://google.com">Link to google here.</a>
+1. Write a paragraph tag with a class of "highlight" and content "Watch out!". <p class="highlight">"Watch out!"</p>
+2. Write an HTML image tag to show an image called `profile-picture.jpg`. <img src="profile-picture.jpg">
+3. Write a link tag that links to http://google.com. <a href="http://google.com">Link to google here.</a>
 5. Write an complete standard HTML document outline (including a DOCTYPE, and `<html>`, `<head>`, and `<body>` tags).
 ```
 <!DOCTYPE html>
@@ -36,6 +36,7 @@
       <li> ... </li>
       </ul>
   </body>
+</html>
 ```  
   
 6. Inside of the code for the previous exercise, write the appropriate tag to link to a script file called `main.js`.
@@ -52,11 +53,11 @@
 
   ```html
   <div>
-  <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-  </ul>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
   </div>
   ```
 
@@ -109,27 +110,25 @@ header p{font size: 20px;}
 ### Exercises
 
 1. Write a line that declares a variable called `myName` and set its value to your name.
-var myName = Tim
+var myName = "Tim";
 2. Write a loop that logs the numbers 1 through 10 to the console.
 ```
-var number = 1
+var number = 1;
 while(number<11){
   console.log(number);
   number++;
 }  
 ```
 3. Translate the following pseudocode into JavaScript: if `score` is greater than `3` and `lives` is greater than `0`, alert "You win!".
-if(var score>3){
-  if(var lives>0){
+if(score > 3 && lives > 0){
   alert("You win!");
-  }
 }
 4. Write a function `sayHello` that takes one argument, a name, and logs "Hello, <name>!" to the console. Then, call the function below the function definition and pass in your name as the argument.
 ```
 function sayHello(name){
-  return console.log("Hello, " + name + "!");
+  console.log("Hello, " + name + "!");
 }
-sayHello(Tim);
+sayHello("Tim");
 ```
 5. What would the following script log to the console?
 
@@ -151,15 +150,7 @@ A: This would log "Friday, Friday" to the console.
   var add = function(a, b) {
     return a + b;
   }
-
-  var result = add(3, 7);
-
-  console.log(result);
-  ```
-A: add(3, 7)
-7. What would the following script log to the console?
-
-  ```javascript
+```javascript
   var helloGoodbye = function(name) {
     return sayHello(name) + " " + sayGoodbye(name);
   }
@@ -174,21 +165,26 @@ A: add(3, 7)
 
   console.log(helloGoodbye("Sarah"));
   ```
+  var result = add(3, 7);
+
+  console.log(result);
+  ```
+A: add(3, 7)
+7. What would the following script log to the console?
+
+  
 
 8. Write a function `findLongestWord()` that takes an array of words and returns the length of the longest one.
 ```
-var word = [scooby, shaggy, fred, swampmonster]
-var i = 0
-findLongestWord(word){
-  if (word[i].length > word[i++].length){
-    word.pop[i++];}
-    else if (word[i].length < word[i++].length){
-      word.pop[i];}
-    else if (word[i].length = word[i++].length){
-      word.pop[i];}
-  else(if word[i++]=undefined){
-    return word[i]}
-}    
+var a=["scoob", "shaggy", "swampmonster", "fred"]
+var biggestWord=0
+function findLongestWord(){
+  for(i=0;i<length.a;i++;){
+    if(a[i]>biggestWord){
+      biggestWord=a[i];}}
+  console.log(biggestWord);}
+
+findLongestWord(a)
 ```      
       
 
